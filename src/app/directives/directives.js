@@ -10,4 +10,11 @@ angular.module('responsive.directives', [])
 
       }
     };
+}])
+.directive('smallContainer', [function(){
+  return {
+    restrict: 'EA',
+    scope: false,
+    templateUrl: '/app/templates/smallContainer.html'
+  };
 }]);
