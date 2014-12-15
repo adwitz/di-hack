@@ -1,11 +1,11 @@
 'use strict'
 
 angular.module('responsive.directives', [])
-  .directive('payWhom', [ function(){
+  .directive('largeContainer', [ function(){
     return {
       restrict: 'EA',
       scope: false,
-      templateUrl: '/templates/largeContainer.html',
+      templateUrl: '/app/templates/largeContainer.html',
       link: function ($scope, element, attrs){
 
       }
