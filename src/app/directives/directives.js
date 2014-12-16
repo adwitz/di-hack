@@ -1,20 +1,41 @@
 'use strict'
 
 angular.module('responsive.directives', [])
-  .directive('largeContainer', [ function(){
+  .directive('largeBox', [ function(){
     return {
       restrict: 'EA',
       scope: false,
-      templateUrl: '/app/templates/largeContainer.html',
+      templateUrl: '/app/templates/largeBox.html',
       link: function ($scope, element, attrs){
 
       }
     };
 }])
-.directive('smallContainer', [function(){
+.directive('smallBox', [function(){
   return {
     restrict: 'EA',
     scope: false,
-    templateUrl: '/app/templates/smallContainer.html'
+    templateUrl: '/app/templates/smallBox.html'
+  };
+}])
+.directive('smallBoxSecondary', [function(){
+  return {
+    restrict: 'EA',
+    scope: false,
+    templateUrl: '/app/templates/smallBoxSecondary.html'
+  };
+}])
+.directive('largeContainerLeft', [function(){
+  return {
+    restrict: 'EA',
+    scope: false,
+    templateUrl: '/app/templates/largeContainerLeft.html'
+  };
+}])
+.directive('smallContainerRight', [function(){
+  return {
+    restrict: 'EA',
+    scope: false,
+    templateUrl: '/app/templates/smallContainerRight.html'
   };
 }]);
