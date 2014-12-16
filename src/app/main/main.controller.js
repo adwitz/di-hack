@@ -65,7 +65,10 @@ angular.module('responsive')
       spendingMoney: '200.00',
       groceries: '300.00',
       clothes: '200.00',
-      gas: '150.00'
+      gas: '150.00',
+      budgeted: '850.00',
+      remaining: '200.00',
+      spent: '650.00'
     };
     angular.forEach($scope.awesomeThings, function(awesomeThing) {
       awesomeThing.rank = Math.random();

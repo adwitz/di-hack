@@ -3,3 +3,18 @@
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+.default-border-small {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.header-divider {
+  margin: 5px 0px 5px 0px;
+  border-bottom: 1px dotted #ccc
+}
+
+.outer-background {
+  background-color: #ccc;
+}

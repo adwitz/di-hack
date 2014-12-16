@@ -1,0 +1,40 @@
+.di-border {
+  border: 2px solid #dd3497;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+.fi-border-small {
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+.outer-background {
+  background-color: #dd3497;
+}
+
+.red {
+  background-color: #993767;
+}
+
+.green {
+  background-color: #9abf88;
+}
+
+/* Bootstrap nav overrides */
+.custom-nav {
+  background-color: #7a0177 !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #49006a !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff !important;
+}

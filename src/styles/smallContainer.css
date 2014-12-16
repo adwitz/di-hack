@@ -1,0 +1,25 @@
+.small-container {
+  text-align: center;
+  color: #ffffff;
+}
+
+.small-container-amount {
+  font-size: 24px;
+}
+
+
+.small-header {
+  font-size: 16px;
+}
+
+.green {
+  background-color: #017351;
+}
+
+.yellow {
+  background-color: #fbbf45;
+}
+
+.red {
+  background-color: #ed0345;
+}
