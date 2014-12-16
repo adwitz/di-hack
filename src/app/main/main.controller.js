@@ -59,6 +59,14 @@ angular.module('responsive')
         'logo': 'stylus.png'
       }
     ];
+
+    $scope.stockData = {
+      balance: '1000.00',
+      spendingMoney: '200.00',
+      groceries: '300.00',
+      clothes: '200.00',
+      gas: '150.00'
+    };
     angular.forEach($scope.awesomeThings, function(awesomeThing) {
       awesomeThing.rank = Math.random();
     });

@@ -1,5 +1,46 @@
 <div class="di-border outer-background">
+  <ul class="tabs">
+    <li class="tab selected" id="tab1Anchor"><a href="#tab1">tab 1</a></li>
+    <li class="tab unselected" id="tab2Anchor"><a href="#tab2">tab 2</a></li>
+  </ul>
   <div class="large-inner">
-    I am the content
+    <div id="tab1">
+      <div>
+        <span class="spending-label">Balance: </span>
+        <span class="spending-data">${{stockData.balance}}</span>
+      </div>
+      <div>
+        <span class="spending-label">Budgeted to spend: </span>
+        <span class="spending-data">${{stockData.spendingMoney}}</span>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <span class="spending-label">Spent on Groceries: </span>
+        <span class="spending-data">${{stockData.groceries}}</span>
+      </div>
+      <div>
+        <span class="spending-label">Spent on Clothes: </span>
+        <span class="spending-data">${{stockData.clothes}}</span>
+      </div>
+      <div>
+        <span class="spending-label">Spent on Gas: </span>
+        <span class="spending-data">${{stockData.gas}}</span>
+      </div>
+    </div>
+    <div id="tab2" class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
   </div>
 </div>
+<script>
+  var switchTabs = function(clicked, unclicked){
+    document.getElementById(clicked).className = '';
+    document.getElementById(unclicked).className = 'hidden';
+    document.getElementById(clicked + 'Anchor').className = 'tab selected';
+    document.getElementById(unclicked + 'Anchor').className = 'tab unselected';
+  };
+  document.getElementById('tab1Anchor').addEventListener('click', function(){
+    switchTabs('tab1', 'tab2');
+  });
+  document.getElementById('tab2Anchor').addEventListener('click', function(){
+    switchTabs('tab2','tab1');
+  });
+</script>

@@ -2,10 +2,60 @@
   background-color: #ccc;
 }
 
+ul.tabs {
+  margin: 10px 10px 0px 10px;
+  display: table;
+  list-style-type: none;
+  padding: 0;
+  width: 100%
+}
+
+.selected {
+  background-color: #ffffff;
+}
+
+.unselected {
+  background-color: lightgrey;
+}
+
+/*ul.tabs > li {
+  float: left;
+}*/
+
+.tab {
+  width: 20%;
+  float: left;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+}
+
 .large-inner {
   background-color: #ffffff;
-  margin: 10px;
+  margin: 0px 10px 10px 10px;
+  padding: 5px 10px 5px 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*.spending-label {
+  float: left;
+}*/
+
+.spending-data {
+  float: right;
+}
+
+#tab1 div {
+  max-width: 300px;
+}
+
+.divider {
+  margin: 5px 0px 5px 0px;
+  border-bottom: 1px solid #ccc
 }
